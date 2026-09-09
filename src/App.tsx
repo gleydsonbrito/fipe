@@ -1,7 +1,7 @@
 import SelectField from './components/SelectField';
 
 const TIPOS_VEICULO = [
-  { codigo: '', nome: 'Selecione uma opção' }
+  { codigo: '', nome: '' }
 ];
 
 function App() {
