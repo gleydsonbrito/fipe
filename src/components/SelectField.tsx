@@ -9,13 +9,12 @@ interface SelectFieldProps {
   disabled?: boolean;
 }
 
-function SelectField({
+export default function SelectField({
   label,
   options,
   value,
   onChange,
   placeholder = 'Selecione uma opção',
-  disabled = false,
 }: SelectFieldProps) {
   return (
     <div className="flex flex-col">
@@ -24,7 +23,6 @@ function SelectField({
       </label>
       <select
         value={value}
-        disabled={disabled}
         onChange={(e) => onChange(e.target.value)}
         className="w-full p-2.5 bg-white border border-slate-200 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 text-slate-700 font-medium text-sm transition-all disabled:opacity-50 disabled:cursor-not-allowed"
       >
@@ -38,5 +36,3 @@ function SelectField({
     </div>
   );
 }
-
-export default SelectField;
