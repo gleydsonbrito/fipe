@@ -4,7 +4,7 @@ interface PrecoCardProps {
   dados: PrecoFipe;
 }
 
-export default function PrecoCard({ dados }: PrecoCardProps) {
+export default function PrecoCard({dados}: PrecoCardProps) {
   return (
     <div className="max-w-xs md:max-w-sm w-full bg-white rounded-xl shadow-lg border border-slate-100 overflow-hidden font-sans transition-all hover:shadow-xl">
       <div className="bg-gradient-to-r from-blue-600 to-indigo-700 p-4 text-white">
